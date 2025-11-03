@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="../CSS/blackjack.css">
+    <script src="../JAVASCRIPT/blackjack.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Botón Volver al Inicio en la parte superior izquierda -->
+        <div class="back-button">
+            <a href="inicio.html">
+                <button><span>&#8592; Volver</span></button>
+            </a>
+        </div>
+
+        <!-- Saldo y Apuesta -->
+        <div id="informacion">
+            <p id="saldo">Saldo: $500</p>
+            <label for="apuesta">Apostar: </label>
+            <input type="number" id="apuesta" placeholder="Ingrese su apuesta">
+            <button id="apostar">Apostar</button>
+            <p id="mensaje-apuesta"></p> <!-- Mensaje de confirmación de apuesta -->
+        </div>
+
+        
+        <!-- Sección del Dealer -->
+        <div class="section dealer">
+            <h2>Dealer: <span id="suma-dealer">0</span></h2>
+            <div id="cartas-dealer" class="cartas">
+                <div class="carta-giratoria" id="carta-oculta">
+                    <div class="carta">
+                        <img id="oculta" class="cara-trasera" src="../cartas/BACK.png" alt="Carta oculta del dealer">
+                    </div>
+                </div>
+                <div class="carta-aleatoria">
+                    <img class="cara-frontal" id="frente-carta-aleatoria" src="" alt="Carta aleatoria del dealer">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección del Jugador -->
+        <div class="section player">
+            <h2>Jugador: <span id="suma-jugador">0</span></h2>
+            <div id="cartas-jugador" class="cartas"></div>
+        </div>
+
+        <!-- Mensaje del Resultado -->
+        <div id="resultado"></div>
+
+        <!-- Botones de Interacción -->
+        <div class="buttons">
+            <button id="pedir">Pedir Carta</button>
+            <button id="plantarse">Plantarse</button>
+            <button id="reiniciar">Reiniciar Juego</button>
+        </div>
+
+        <button id="btn-sound" class="btn-sound">
+            <i class="fas fa-volume-up"></i> <!-- Ícono de parlante -->
+        </button>
+    </div>
+</body>
+</html>

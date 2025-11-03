@@ -1,0 +1,51 @@
+/* Fondo retro */
+body {
+    background-color: #1d1f21;
+    color: #f0c674;
+    font-family: 'Courier New', Courier, monospace; /* Tipografía de estilo retro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.home-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    color: #f0c674;
+    text-shadow: 2px 2px 0 #de935f, 4px 4px 0 #b294bb; /* Sombras de colores retro */
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #81a2be;
+    margin-bottom: 40px;
+}
+
+/* Botón de jugar */
+#play-button {
+    background-color: #cc6666;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    text-shadow: 1px 1px 0 #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#play-button:hover {
+    background-color: #a54242;
+    transform: scale(1.1);
+}
+
+#play-button:active {
+    background-color: #8c3b3b;
+}
